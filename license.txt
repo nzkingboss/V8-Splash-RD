@@ -1,0 +1,7 @@
+Copyright (c) [2024 Grizzley Index]
+
+This software was developed for the exclusive use of "V8 SPLASH RD" as a work by proposal.
+Any use, copy, modification, merger, publication, distribution, sublicense or sale thereof is prohibited without the express permission of GRIZZLEY INDEX.
+This code is shared in this public repository for demonstration purposes, but GRIZZLEY INDEX retains all copyrights on any source code, binaries, documentation and resources contained in this repository.
+
+Originally created by Junior Ramirez for "V8 SPLASH RD".
