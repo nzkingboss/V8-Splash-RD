@@ -189,7 +189,7 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #d10a20;
+    background: radial-gradient(#f0483a, #d10a20);
     display: flex;
     justify-content: center;
     align-items: center;
