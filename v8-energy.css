@@ -7,16 +7,26 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-.main {
-  position: relative;
+
+body {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: radial-gradient(circle, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+.main {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 100px 100px;
 }
+
 header {
   position: absolute;
   top: 0;
@@ -28,70 +38,72 @@ header {
   align-items: center;
   z-index: 1000;
 }
+
 .logo {
   max-width: 90px;
 }
+
 .navigation {
   display: flex;
 }
+
 .navigation li {
   list-style: none;
 }
+
 .navigation li a {
   position: relative;
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 40px;
 }
 
-
 /* Runway */
 
 .product-images {
-    display: flex;  
+  display: flex;
 }
-  
+
 .product-images img {
-    width: 300px;
-    height: 270px;
+  width: 300px;
+  height: 270px;
 }
-  
-.prev, 
+
+.prev,
 .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    font-weight: bold;
-    border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  font-weight: bold;
+  border-radius: 0 3px 3px 0;
 }
 
 .product-images img:nth-child(2) {
-    display: none;
+  display: none;
 }
 
 .prev {
-    left: 0;
-    border-radius: 3px 0 0 3px;
-    background: none;
-    border: none;
-    font-size: 40px;
-    color: #3b2b00;
-    padding: 15px;
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #3b2b00;
+  padding: 15px;
 }
 
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-    background: none;
-    border: none;
-    font-size: 40px;
-    color: #3b2b00;
-    padding: 15px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  background: none;
+  border: none;
+  font-size: 40px;
+  color: #3b2b00;
+  padding: 15px;
 }
-
 
 /* menu styles */
 
@@ -100,9 +112,10 @@ h1 {
   padding-top: 70px;
   color: #ffffff;
 }
+
 .sub {
   font-size: 19px;
-  color: #ffffff;
+  color: #17283f;
   padding-bottom: 45px;
   margin-left: 20px;
   margin-right: 20px;
@@ -115,11 +128,13 @@ h1 {
   margin: 0 60px;
   margin-bottom: 150px;
 }
+
 .product-section h1,
 .product-section p {
   text-align: center;
   margin-top: 30px;
 }
+
 .product-section .product-cart {
   width: 280px;
   border: 4px solid #dfdfdf;
@@ -132,18 +147,22 @@ h1 {
   box-shadow: 30px 30px 40px 40px rgba(0, 0, 0, 0.02);
   transition: box-shadow 0.2s;
 }
+
 .product-section .product-cart:hover {
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
 }
+
 .product-section .product-cart img {
   width: 100%;
   border-radius: 25px;
 }
+
 .product-section .product-cart h4 {
   font-size: 18px;
   color: #3b2b00;
   padding: 5px 0;
 }
+
 .product-section .product-cart .price {
   color: #000000;
   padding: 4px 0;
@@ -152,22 +171,19 @@ h1 {
 /* flooter styles */
 
 .footer {
-  position: absolute;
-  width: 100%;
-  display: flex; 
-  justify-content: space-between;
-  align-items: center;
-  background-color: #310000; 
+  background-color: #310000;
   color: #fff;
   line-height: 1.8;
-  bottom: 0;
-  padding: 10px 10px; 
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   max-width: 100px;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 .logo img {
@@ -182,7 +198,6 @@ h1 {
   list-style: none;
 }
 
-
 .sci li a {
   color: #fff;
   font-size: 2.5em;
@@ -196,30 +211,28 @@ h1 {
 }
 
 .contact-info {
-  text-align: center; 
+  text-align: center;
   color: #fff;
   font-size: 1em;
 }
 
 .contact-info a {
-  text-align: center; 
+  text-align: center;
   color: #b90c00;
   font-size: 1em;
   text-decoration: none;
 }
 
 .contact-info a:hover {
-  text-align: center; 
+  text-align: center;
   color: #ff7300;
   font-size: 1.2em;
 }
 
-
-
 /* ir arriba */
 #scrollToTop {
   position: fixed;
-  bottom: 20px; 
+  bottom: 20px;
   right: 20px;
   width: 50px;
   height: 50px;
@@ -229,43 +242,49 @@ h1 {
   border: none;
   cursor: pointer;
   opacity: 0;
-  transition: opacity 0.5s;  
+  transition: opacity 0.5s;
 }
 
 #scrollToTop.show {
-  opacity: 1;  
+  opacity: 1;
 }
-
-
 
 /* now, make it responsive */
 @media (max-width: 991px) {
   .main {
     padding: 0px;
   }
+
   header {
     padding: 20px 40px;
   }
+
   .logo {
     max-width: 70px;
   }
+
   .content {
     flex-direction: column;
     margin: 120px 0 40px;
   }
+
   .content .text {
     max-width: 100%;
   }
+
   .content .text h2 {
     font-size: 4em;
   }
+
   .slider {
     margin-top: 40px;
   }
+
   .slider .slides img {
     width: 100%;
     max-width: 420px;
   }
+
   .footer {
     position: relative;
     padding: 0;
@@ -274,6 +293,7 @@ h1 {
   .navigation {
     display: none;
   }
+
   .navigation.active {
     position: fixed;
     top: 0;
@@ -286,11 +306,13 @@ h1 {
     align-items: center;
     flex-direction: column;
   }
+
   .navigation li a {
     font-size: 1.5em;
     margin: 10px 0;
     display: inline-block;
   }
+
   .toggle {
     position: relative;
     width: 32px;
@@ -301,6 +323,8 @@ h1 {
     z-index: 100000;
     cursor: pointer;
   }
+
+  .toggle.active {
   .toggle.active {
     position: fixed;
     right: 40px;
@@ -336,7 +360,7 @@ h1 {
 @media (max-width: 480px) {
   header,
   .main {
-    padding: 20px;
+    padding: 25px;
   }
   .toggle.active {
     right: 20px;
@@ -413,4 +437,5 @@ h1 {
     padding: 20px;
   }    
   
+}
 }
